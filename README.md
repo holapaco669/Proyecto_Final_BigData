@@ -1,38 +1,42 @@
-# ♻️ Clasificador Inteligente de Residuos
+# ♻️ Clasificador de Residuos con Visión Artificial
 
-Este proyecto final es una aplicación web que utiliza Inteligencia Artificial y Visión por Computadora para ayudar a las personas a separar correctamente la basura.
+Este es un proyecto final de Big Data que utiliza una Red Neuronal Convolucional (CNN) en el navegador para clasificar residuos sólidos en tiempo real y facilitar el reciclaje.
 
-El sistema identifica los residuos a través de la cámara web en tiempo real y te indica en qué contenedor deben depositarse.
+## 🚀 DEMOSTRACIÓN EN VIVO (Opción Recomendada)
+Para probar la aplicación inmediatamente sin instalar nada, haga clic en el siguiente enlace. Esta versión corre directamente en los servidores de GitHub y garantiza el funcionamiento correcto de la cámara y el modelo.
 
-## 🎥 Video de Demostración
-Mira el funcionamiento de la aplicación aquí:
-**[BORRA ESTO Y PEGA AQUÍ TU LINK DE YOUTUBE]**
-
-## 🚀 Cómo probarlo
-Puedes probar la aplicación directamente en este enlace:
-[https://7c6b6278-8d2d-4a69-b19a-7da50d9cc377-00-2knmiggojfd2g.picard.replit.dev/]
-
-## 📋 Categorías que detecta
-El modelo fue entrenado en **Teachable Machine** para identificar 4 clases:
-1.  🌿 **Basura Orgánica** (Restos de comida, cáscaras)
-2.  ♻️ **Inorgánica Reciclable** (Botellas, cartón, latas)
-3.  🗑️ **Inorgánica No Reciclable** (Envolturas sucias, unicel)
-4.  ☢️ **Residuos Especiales/Peligrosos** (Pilas, electrónicos)
-
-## 🛠️ Tecnologías utilizadas
-* **Teachable Machine (Google):** Para entrenar la Red Neuronal.
-* **TensorFlow.js:** Para ejecutar el modelo en el navegador web.
-* **HTML, CSS y JavaScript:** Para la interfaz de usuario.
-
-## ⚙️ Instrucciones de Instalación (Local)
-Si deseas correr este proyecto en tu computadora:
-1.  Descarga este repositorio como ZIP.
-2.  IMPORTANTE: Descomprime (extrae) el archivo ZIP.
-3.  Asegúrate de que la carpeta `/model` esté junto al `index.html`.
-4.  Para que el modelo cargue sin errores de seguridad, se recomienda abrir el archivo usando un servidor local.
-5.  Permite el acceso a la cámara web.
+👉 **(https://holapaco669.github.io/Proyecto_Final_BigData/)**
 
 ---
-**Proyecto Final**
-**Alumno:** [Carlos Fabian Cruz Flores]
-**Materia:** [Big Data]
+
+## 📂 Descripción del Repositorio
+Este repositorio contiene el código fuente completo del proyecto:
+* `index.html`: La estructura de la interfaz de usuario.
+* `style.css`: Los estilos visuales y diseño responsivo.
+* `script.js`: La lógica que conecta la cámara web con el modelo de TensorFlow.js.
+* `/model`: Carpeta que contiene los archivos binarios del modelo entrenado (`model.json`, `metadata.json`, `weights.bin`).
+
+---
+
+## ⚙️ Instrucciones de Ejecución Local (Opcional)
+
+⚠️ **NOTA TÉCNICA IMPORTANTE:**
+Si descarga este proyecto como ZIP y abre el archivo `index.html` con doble clic, **es probable que la cámara NO cargue**.
+
+Esto no es un error del código, sino una **política de seguridad de los navegadores (CORS)** que impide cargar modelos de Inteligencia Artificial desde archivos locales (`file://`).
+
+**Si desea ejecutarlo localmente en su computadora, es necesario usar un Servidor Local siguiendo estos pasos:**
+
+1.  **Descargar:**
+    Descargue este repositorio como ZIP y descomprímalo en su computadora.
+2.  **Abrir con Servidor Local:**
+    Para evitar el bloqueo de seguridad, debe abrir la carpeta usando un servidor.
+    * **Opción A (Visual Studio Code - Recomendada):** Abra la carpeta del proyecto en VS Code, instale la extensión "Live Server", haga clic derecho en `index.html` y seleccione **"Open with Live Server"**.
+    * **Opción B (Python):** Abra la terminal en la carpeta del proyecto y ejecute el comando: `python -m http.server`. Luego vaya a `localhost:8000` en su navegador.
+3.  **Permisos:**
+    Acepte el permiso para usar la cámara web cuando el navegador lo solicite.
+
+---
+
+**Desarrollado por:** Carlos Fabian Cruz Flores
+**Proyecto Final de Big Data**
