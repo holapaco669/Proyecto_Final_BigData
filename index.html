@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador de Residuos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>♻️ Clasificador Inteligente ♻️</h1>
+
+    <div class="main-layout">
+        
+        <div class="left-column">
+            <div class="webcam-wrapper" id="webcam-wrapper"></div>
+        </div>
+
+        <div class="right-column">
+            <div class="bin" id="clase0">
+                <i class="fas fa-leaf"></i> <span>Basura orgánica</span>
+            </div>
+            <div class="bin" id="clase1">
+                <i class="fas fa-recycle"></i> <span>Inorgánica reciclable</span>
+            </div>
+            <div class="bin" id="clase2">
+                <i class="fas fa-trash-can-slash"></i> <span>Inorgánica no reciclable</span>
+            </div>
+            <div class="bin" id="clase3">
+                <i class="fas fa-radiation"></i> <span>Residuos especiales</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bottom-status">
+        <p>DETECTANDO:</p>
+        <h2 id="big-prediction">Esperando...</h2>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
